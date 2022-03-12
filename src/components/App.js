@@ -1,9 +1,9 @@
 import "./App.css";
-
+import Parent from "./Parent";
 function App() {
   return (
     <div className="App">
-      <h1>React Ecommerce website by Liedji.</h1>
+      <Parent />
     </div>
   );
 }
