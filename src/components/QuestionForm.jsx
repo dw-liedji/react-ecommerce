@@ -1,13 +1,28 @@
+import {useState} from 'react'
 const QuestionForm = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    alert(e.target['my_input'].value)
+  const [inputValue, setInputValue] = useState('Posez une question ici...')
+  const handleChange = (e) => {
+    setInputValue(e.target.value)
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="my_input" defaultValue="Tapez votre texte" />
-      <button type="submit">Entrer</button>
-    </form>
+    <div>
+      <div>
+        {inputValue.includes('n') ? (
+          <p color="#5a1f6d">Must not contains n</p>
+        ) : (
+          <p color="#5c8f2c">This is input:{inputValue}</p>
+        )}
+      </div>
+
+      <textarea
+        value={inputValue}
+        onChange={handleChange}
+        name=""
+        id=""
+        cols="20"
+        rows="5"
+      />
+    </div>
   )
 }
 
