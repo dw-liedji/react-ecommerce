@@ -24,6 +24,7 @@ const ShoppingList = () => {
           {plantList.map((plant, index) => (
             <PlantItem
               key={index}
+              id={index}
               cover={plant.cover}
               name={plant.name}
               light={plant.light}

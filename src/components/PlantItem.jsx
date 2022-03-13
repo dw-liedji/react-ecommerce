@@ -1,8 +1,11 @@
 import CareScale from './CareScale'
 import '../styles/PlantItem.css'
-const PlantItem = ({name, cover, light, water}) => {
+const PlantItem = ({name, id, cover, light, water}) => {
+  const handleClick = (plantname) => {
+    console.log('Select plan with id:', plantname)
+  }
   return (
-    <div className="lmj-plant-item">
+    <div className="lmj-plant-item" onClick={() => handleClick(name)}>
       <img
         className="lmj-plant-item-cover"
         src={cover}
