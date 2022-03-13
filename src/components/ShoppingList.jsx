@@ -1,19 +1,19 @@
 import plantList from '../data/plantList'
 import '../styles/ShoppingList.css'
-
+import PlantItem from './PlantItem'
 const ShoppingList = () => {
   const categories = plantList.reduce((categories, currentPlant) => {
     return categories.includes(currentPlant.category)
       ? categories
       : categories.concat(currentPlant.category)
   }, [])
-
+  console.log(plantList[0].monstera)
   return (
     <div>
       <div>
         <div className="lmj-categories">
           {categories.map((category, index) => (
-            <span className="lmj-category" key={`${category} - ${index}`}>
+            <span className="lmj-category" key={`${category}`}>
               {category}
             </span>
           ))}
@@ -22,11 +22,13 @@ const ShoppingList = () => {
       <div>
         <ul className="lmj-plant-list">
           {plantList.map((plant, index) => (
-            <li className="lmj-plant-item" key={`${plant.name} - ${index}`}>
-              {plant.name}
-              {plant.isBestSale && <span>👍</span>}
-              {plant.isSpecialOffer && <div className="lmj-sales">Soldes</div>}
-            </li>
+            <PlantItem
+              key={index}
+              cover={plant.cover}
+              name={plant.name}
+              light={plant.light}
+              water={plant.water}
+            />
           ))}
         </ul>
       </div>
