@@ -1,9 +1,11 @@
 import './App.css'
-import Parent from './Parent'
+import Banner from './Banner'
+import Cart from './Cart'
 function App() {
   return (
     <div className="App">
-      <Parent />
+      <Banner />
+      <Cart />
     </div>
   )
 }

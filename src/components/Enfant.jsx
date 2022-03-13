@@ -1,5 +1,5 @@
 import React from 'react'
-const Enfant = ({ color, setColor }) => {
+const Enfant = ({color, setColor}) => {
   return (
     <div>
       <button

@@ -1,1 +1,8 @@
-{ "semi": false, "singleQuote": true, "tabWidth": 2, "bracketSameLine": true }
+{
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "bracketSameLine": true,
+  "bracketSpacing": false,
+  "parser": "babel"
+}
