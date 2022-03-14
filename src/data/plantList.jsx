@@ -9,6 +9,7 @@ const plantList = [
     water: 1,
     light: 3,
     cover: monstera,
+    price: 20,
   },
   {
     name: 'ficus lyrata',
@@ -18,6 +19,7 @@ const plantList = [
     water: 1,
     light: 1,
     cover: monstera,
+    price: 60,
   },
   {
     name: 'pothos argenté',
@@ -26,6 +28,7 @@ const plantList = [
     water: 3,
     light: 2,
     cover: monstera,
+    price: 25,
   },
   {
     name: 'yucca',
@@ -34,6 +37,7 @@ const plantList = [
     water: 1,
     light: 3,
     cover: monstera,
+    price: 2,
   },
   {
     name: 'olivier',
@@ -42,6 +46,7 @@ const plantList = [
     water: 1,
     light: 2,
     cover: monstera,
+    price: 200,
   },
   {
     name: 'géranium',
@@ -50,6 +55,7 @@ const plantList = [
     water: 3,
     light: 3,
     cover: monstera,
+    price: 50,
   },
   {
     name: 'basilique',
@@ -58,12 +64,14 @@ const plantList = [
     water: 1,
     light: 2,
     cover: monstera,
+    price: 10,
   },
   {
     name: 'aloe',
     category: 'plante grasse',
     id: '8fp',
     cover: monstera,
+    price: 1,
   },
   {
     name: 'succulente',
@@ -72,6 +80,7 @@ const plantList = [
     water: 2,
     light: 1,
     cover: monstera,
+    price: 7,
   },
 ]
 export default plantList
